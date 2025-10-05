@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample data extraction rules file; uncomment and customize as necessary.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for details.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- TODO: Use <include> and <exclude> to control what is backed up.
+        <include .../>
+        <exclude .../>
+        -->
+    </cloud-backup>
+    <!--
+    <device-transfer>
+        <include .../>
+        <exclude .../>
+    </device-transfer>
+    -->
+</data-extraction-rules>
+
+    <!--
+    Explicación del archivo data_extraction_rules.xml:
+
+    - Este archivo define reglas de respaldo y transferencia de datos en Android 12 o superior.
+    - <data-extraction-rules>: raíz del archivo, agrupa todas las reglas.
+    - <cloud-backup>: sección que controla qué datos se incluyen o excluyen en las copias de seguridad en la nube.
+        • Se pueden usar etiquetas <include> y <exclude> para especificar archivos, carpetas o bases de datos.
+    - <device-transfer>: sección opcional (comentada en este ejemplo) que controla qué datos se transfieren al migrar la app a otro dispositivo.
+    - Los comentarios iniciales indican que este archivo es un ejemplo base y debe personalizarse según las necesidades de la app.
+    - Si no se especifican reglas, Android aplicará un respaldo por defecto, lo que puede incluir datos que no siempre se desean guardar.
+
+    En resumen: este archivo te permite tener control fino sobre qué datos de tu aplicación se respaldan en la nube o se transfieren entre dispositivos, evitando guardar información innecesaria o sensible.
+    -->

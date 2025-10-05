@@ -1,0 +1,8 @@
+<resources>
+    <color name="verde_primario">#1B5E20</color> <!-- Verde oscuro -->
+    <color name="verde_primario_variant">#2E7D32</color> <!-- Variante más clara -->
+    <color name="verde_secundario">#388E3C</color> <!-- Verde secundario -->
+    <color name="on_verde">#FFFFFF</color> <!-- Texto sobre verde -->
+    <color name="fondo_claro">#FFFFFF</color> <!-- Fondo claro -->
+    <color name="texto_principal">#000000</color> <!-- Texto negro -->
+</resources>

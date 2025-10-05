@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample backup rules file; uncomment and customize as necessary.
+   See https://developer.android.com/guide/topics/data/autobackup
+   for details.
+   Note: This file is ignored for devices older than API 31
+   See https://developer.android.com/about/versions/12/backup-restore
+-->
+<full-backup-content>
+    <!--
+   <include domain="sharedpref" path="."/>
+   <exclude domain="sharedpref" path="device.xml"/>
+-->
+</full-backup-content>
+
+    <!--
+    Explicación del archivo backup_rules.xml:
+
+    - Este archivo define reglas de respaldo automático (Auto Backup) en Android.
+    - <full-backup-content>: raíz del archivo, agrupa todas las reglas de qué se respalda o no.
+    - Dentro se pueden usar:
+       • <include> → para indicar qué datos se deben incluir en el respaldo.
+       • <exclude> → para indicar qué datos se deben excluir del respaldo.
+    - Los atributos más comunes son:
+       • domain → especifica el tipo de datos (ejemplo: "sharedpref", "database", "files", "external").
+       • path → indica la ruta o archivo específico dentro de ese dominio.
+    - En el ejemplo comentado:
+       • <include domain="sharedpref" path="."/> → incluiría todas las preferencias compartidas.
+       • <exclude domain="sharedpref" path="device.xml"/> → excluiría un archivo específico de preferencias.
+    - Nota importante: este archivo solo se aplica en dispositivos con Android 12 (API 31) o superior.
+    - En versiones anteriores, este archivo es ignorado y se usan reglas por defecto.
+
+    En resumen: este archivo te permite controlar con precisión qué datos de tu aplicación se respaldan automáticamente en la nube, evitando guardar información innecesaria o sensible.
+    -->

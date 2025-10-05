@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Usuario"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/tvPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Pais"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btnBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Borrar" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+    <!--
+    Explicación del layout item_rv_usuario.xml:
+
+    - El contenedor principal es un LinearLayout horizontal que organiza los elementos en fila.
+    - Dentro hay un CardView (cvUsuario) que da estilo de tarjeta a cada ítem de la lista.
+        • Tiene esquinas redondeadas (cardCornerRadius).
+        • Tiene sombra/elevación (cardElevation).
+        • Usa compatibilidad de padding para mantener el estilo en distintas versiones de Android.
+    - Dentro del CardView hay un LinearLayout vertical que organiza los elementos en columna.
+        • TextView (tvUsuario): muestra el nombre del usuario, centrado y con padding.
+        • TextView (tvPais): muestra el país del usuario, también centrado y con padding.
+        • Button (btnBorrar): botón centrado que permite eliminar al usuario de la lista/base de datos.
+    - Este layout se usa como plantilla para cada elemento del RecyclerView en la lista de usuarios.
+    -->

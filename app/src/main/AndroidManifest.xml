@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CRUD_Room_Kotlin">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CRUD_Room_Kotlin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+    <!--
+   Explicación del AndroidManifest.xml:
+
+    - <manifest>: raíz del archivo, define el espacio de nombres y metadatos de la app.
+    - xmlns:android y xmlns:tools: definen los namespaces necesarios para atributos de Android y herramientas.
+    - <application>: contiene la configuración global de la aplicación.
+        • android:allowBackup → permite que la app se respalde automáticamente.
+        • android:dataExtractionRules y android:fullBackupContent → archivos XML que definen reglas de backup.
+        • android:icon y android:roundIcon → íconos de la aplicación.
+        • android:label → nombre visible de la app.
+        • android:supportsRtl → habilita soporte para idiomas de derecha a izquierda.
+        • android:theme → tema global de la aplicación.
+    - <activity>: define una pantalla de la app, en este caso MainActivity.
+        • android:name=".MainActivity" → indica la clase de la actividad principal.
+        • android:exported="true" → permite que la actividad sea accesible desde fuera (requerido desde Android 12).
+        • android:label → nombre mostrado de la actividad.
+        • android:theme → tema aplicado específicamente a esta actividad.
+    - <intent-filter>: indica cómo se lanza la actividad.
+        • <action android:name="android.intent.action.MAIN" /> → marca esta actividad como punto de entrada.
+        • <category android:name="android.intent.category.LAUNCHER" /> → hace que aparezca en el launcher del dispositivo.
+
+    En resumen: este archivo define la configuración global de la app y establece que MainActivity es la pantalla inicial que se abre al ejecutar la aplicación.
+    -->

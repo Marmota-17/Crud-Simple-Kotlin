@@ -1,0 +1,81 @@
+[versions]
+# Sección donde defines las versiones de librerías y plugins
+
+agp = "8.13.0"              # Versión del Android Gradle Plugin
+kotlin = "2.0.21"           # Versión de Kotlin
+coreKtx = "1.17.0"          # Versión de AndroidX Core KTX
+junit = "4.13.2"            # Versión de JUnit clásico
+junitVersion = "1.3.0"      # Versión de JUnit para AndroidX Test
+espressoCore = "3.7.0"      # Versión de Espresso para pruebas UI
+lifecycleRuntimeKtx = "2.9.4" # Versión de Lifecycle Runtime KTX
+activityCompose = "1.11.0"  # Versión de Activity con soporte Compose
+composeBom = "2024.09.00"   # Versión del BOM de Jetpack Compose
+recyclerview = "1.4.0"      # Versión de RecyclerView
+cardview = "1.0.0"          # Versión de CardView
+appcompat = "1.7.1"         # Versión de AppCompat
+
+[libraries]
+# Sección donde defines las librerías con su grupo, nombre y versión
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+# Librería de extensiones KTX para AndroidX Core
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+# Librería de JUnit para pruebas unitarias
+
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+# Extensión de JUnit para AndroidX Test
+
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+# Librería Espresso para pruebas de interfaz de usuario
+
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+# Librería Lifecycle Runtime con extensiones KTX
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+# Activity con integración para Jetpack Compose
+
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+# BOM (Bill of Materials) para gestionar versiones de Compose
+
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+# Módulo base de UI de Jetpack Compose
+
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+# Módulo de gráficos de Compose
+
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+# Herramientas de depuración y vista previa de Compose
+
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+# Vista previa de UI en Compose
+
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+# Manifesto de pruebas para Compose
+
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+# Integración de pruebas JUnit4 con Compose
+
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+# Librería de Material Design 3 para Compose
+
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+# RecyclerView para listas dinámicas
+
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+# CardView para mostrar tarjetas
+
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+# AppCompat para compatibilidad con versiones antiguas de Android
+
+[plugins]
+# Sección donde defines los plugins que usará el proyecto
+
+android-application = { id = "com.android.application", version.ref = "agp" }
+# Plugin para aplicaciones Android
+
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+# Plugin de Kotlin para Android
+
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+# Plugin de Kotlin para habilitar Jetpack Compose

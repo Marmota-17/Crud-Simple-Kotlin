@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CRUD_Room_Kotlin</string>
+</resources>
+
+    <!--
+    Explicación del archivo strings.xml:
+
+    - Este archivo se utiliza para centralizar todos los textos de la aplicación.
+    - La etiqueta <resources> es el contenedor principal de todos los recursos de tipo string.
+    - Dentro, cada <string> define un texto con un nombre único (atributo "name").
+    - En este caso, "app_name" almacena el nombre de la aplicación: "CRUD_Room_Kotlin".
+    - Usar strings.xml permite:
+       • Reutilizar textos en distintas partes de la app.
+       • Facilitar la traducción a otros idiomas.
+       • Mantener el código más limpio y organizado.
+    -->
